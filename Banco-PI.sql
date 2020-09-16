@@ -33,7 +33,7 @@ foreign key (idCliente) references tbclientes(idCliente),
 foreign key (idRua) references tbRua(idRua)
 );
 
-desc tbsensores;
+desc tbSensores;
 
 -- drop database controladora_sensores;
 
