@@ -36,11 +36,11 @@ São os atributos deste objeto:
 Exemplo:
 case1 = {minHum: 20 , maxHum: 80, minTemp: 20, maxTemp: 25}
 */
-dht11 = sensors.dht11({minHum:50, maxHum:100, minTemp: 18, maxTemp: 23})
+dht11 = sensors.dht11()
 
 
 //Exibindo o valor retornado da função na variável.
 
-console.log('DHT11 - Umidade: ' + dht11[0])
-console.log('DHT11 - Temperatura: ' + dht11[1].toFixed(2))
+console.log('DHT11 - Umidade: ' + dht11)
+// console.log('DHT11 - Temperatura: ' + dht11[1].toFixed(2))
 

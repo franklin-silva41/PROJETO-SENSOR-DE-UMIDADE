@@ -48,8 +48,8 @@ values(1,'Rua Alfredo silva','Roteador-Alfredo'),
 
 insert into tbsensores
 values(1,40,80,57,'Normal'),
-(2,30,70,40,'Não Passou'),
-(3,40,80,80,'Ultrapassou'),
+(2,30,70,40,'Normal'),
+(3,40,80,82,'Acima'),
 (4,50,90,30,'Muito abaixo'),
 (5,40,80,50,'Normal'),
 (6,50,90,80,'Normal');
@@ -62,6 +62,10 @@ select * from tbclientes;
 select * from tbrua;
 
 select * from tbsensores;
+
+update tbsensores set Alertasensor = 'Normal' where idSensor = 2;
+
+update tbsensores set Mediasensor = 82 where idSensor = 3;
 
 
 

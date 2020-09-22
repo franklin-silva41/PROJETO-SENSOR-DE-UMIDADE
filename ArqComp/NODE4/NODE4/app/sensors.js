@@ -46,8 +46,8 @@ function dht11(options){
     // minTemperature = typeof minTemperature == 'undefined' ? 18 : minTemperature;
     // maxTemperature = typeof maxTemperature == 'undefined' ? 25 : maxTemperature;
 
-    minHumidity = typeof minHumidity == 'undefined' ? 50 : minHumidity; // muda aqui o minimo da temperatura
-    maxHumidity = typeof maxHumidity == 'undefined' ? 90 : maxHumidity; // muda aqui o maximo da temperatura
+    minHumidity = typeof minHumidity == 'undefined' ? 40 : minHumidity; // muda aqui o minimo da umidade
+    maxHumidity = typeof maxHumidity == 'undefined' ? 90 : maxHumidity; // muda aqui o maximo da umidade
 
     let randomHumidity = Math.floor(Math.random()*(maxHumidity-minHumidity)+minHumidity);
     
