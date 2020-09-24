@@ -18,7 +18,7 @@ create table tbRua(
 
 idRua int primary key,
 EndRua varchar(80),
-nomeRoteador varchar(20)
+nomeRededeDados varchar(50)
 );
 
 create table tbsensores(
@@ -39,12 +39,12 @@ values(1,'Anderson Mariano','anderson@bandtec.com','343.953.940-23','88.932.032-
 (6,'João Oliveira','joao@bandtec.com','394.903.232-94','35.868.999-3','Rua Guilherme gildo N°39','89034-234','Ministério do Desenvolvimento Regional');
 
 insert into tbrua
-values(1,'Rua Alfredo silva','Roteador-Alfredo'),
-(2,'Rua Josivaldo Souza','Roteador-Josivaldo'),
-(3,'Rua Astrogildo Faria','Roteador-Astrogildo'),
-(4,'Rua Josislene','Roteador-Josislene'),
-(5,'Rua Miguelito','Roteador-Miguelito'),
-(6,'Rua Altervildo','Roteador-Altervido');
+values(1,'Rua Alfredo silva','RededeDados-Alfredo'),
+(2,'Rua Josivaldo Souza','RededeDados-Josivaldo'),
+(3,'Rua Astrogildo Faria','RededeDados-Astrogildo'),
+(4,'Rua Josislene','RededeDados-Josislene'),
+(5,'Rua Miguelito','RededeDados-Miguelito'),
+(6,'Rua Altervildo','RededeDados-Altervido');
 
 insert into tbsensores
 values(1,40,80,57,'Normal'),
@@ -55,7 +55,7 @@ values(1,40,80,57,'Normal'),
 (6,50,90,80,'Normal');
 
 
--- drop database controladora_sensores;
+-- drop database sustabil;
 
 select * from tbclientes;
 
@@ -63,9 +63,6 @@ select * from tbrua;
 
 select * from tbsensores;
 
-update tbsensores set Alertasensor = 'Normal' where idSensor = 2;
-
-update tbsensores set Mediasensor = 82 where idSensor = 3;
 
 
 
